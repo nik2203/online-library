@@ -3,21 +3,11 @@ body{
     margin: 0px;
 }
 
-a{
-    color: rgb(240, 244, 242);
-}
-
 nav{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 10px;
-}
-
-.user{
-    top: 30px;
-    left: 1350px;
-    position: absolute;
 }
 
 .navlink{
@@ -29,6 +19,7 @@ nav{
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    color: rgb(240, 244, 242);
 }
 
 .title{
@@ -62,14 +53,61 @@ nav{
     padding: 5px;
 }
 
+.user{
+    top: 20px;
+    left: 1330px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.748);
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
 .userbutton{
     padding: 10px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     border: none;
-    margin-left: 10px;
-    margin-right: 10px;
+    border-radius: 3px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.901);
+    transition: all 0.5s;
+    display: block;
+}
+
+.userlink{
+    color: black;
+}
+
+.userbutton span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s
+}
+
+.userbutton span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.userbutton:hover span {
+    padding-right: 20px;
+}
+
+.userbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#login{
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 a:link{
@@ -84,4 +122,9 @@ a:hover{
 
 a:active{
     color:olivedrab;
+}
+
+.userbutton:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.803);
 }
