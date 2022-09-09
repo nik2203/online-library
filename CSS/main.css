@@ -62,6 +62,16 @@ nav{
     padding: 5px;
 }
 
+.userbutton{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 a:link{
     text-decoration: none;
 }
