@@ -55,7 +55,7 @@ nav{
 
 .user{
     top: 20px;
-    left: 1330px;
+    left: 85%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.748);
     margin-left: 20px;
@@ -77,6 +77,12 @@ nav{
 
 .userlink{
     color: black;
+}
+
+.logo{
+    position: absolute;
+    top:10%;
+    left: 1%;
 }
 
 .userbutton span{
