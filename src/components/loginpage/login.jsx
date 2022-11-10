@@ -1,6 +1,9 @@
 import React from 'react'
 import "./login.css"
 
+const response = await fetch('/');
+const body = await response.json();
+
 function Login() {
     return (
         <div className='login'>
