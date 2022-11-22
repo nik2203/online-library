@@ -1,6 +1,7 @@
 import React from 'react'
 import "./login.css"
 import NavBar from '../Navbar/navbar';
+import Footer from '../footer/footer';
 
 //const response = await fetch('/');
 //const body = await response.json();
@@ -18,9 +19,12 @@ function Login() {
                 </div>
                 <br />
                 <div className='user-box'>
-                    <input type="text" placeholder="Password" />
+                    <input type="password" placeholder="Password" />
                 </div>
                 <center><input id="submit" type="submit" value="Submit" /></center>
+            </div>
+            <div>
+                <Footer/>
             </div>
         </div>)
 }

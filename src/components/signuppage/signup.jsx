@@ -1,6 +1,7 @@
 import React from 'react'
 import "./signup.css"
 import NavBar from '../Navbar/navbar';
+import Footer from '../footer/footer';
 
 function Signup() {
     return (
@@ -9,22 +10,27 @@ function Signup() {
             <NavBar/>
         </div>
         <div className='signup'>
+        <form>
             <h2>Sign Up</h2>
             <div className='user-box'>
-                <input type="text" placeholder="Set Username" />
+                <input type="text" placeholder="Set Username"  minlength={3} required/>
             </div>
             <br/>
             <div className='user-box'>
-                <input type="text" placeholder='Set Display Name'/>
+                <input type="text" placeholder='Set Display Name' required/>
             </div>
             <br/>
             <div className='user-box'>
-                <input type="text" placeholder="Set Password" />
+                <input type="password" placeholder="Set Password" required />
             </div>
             <div className='user-box'>
-                <input type="text" placeholder="Enter Email" />
+                <input type="email" placeholder="Enter Email" required/>
             </div>
-            <center><input id = "submit" type = "submit" value = "Submit" /></center>
+            </form>
+            <center><input id = "submit" type = "submit" value = "Submit"/></center>
+        </div>
+        <div>
+            <Footer/>
         </div>
         </div>)
 }
