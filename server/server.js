@@ -1,7 +1,17 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const MongoClient = require("mongodb").MongoClient;
 
-app.listen(port, () => {
-  console.log(`app listening on port ${port}`)
+const app = express();
+const route = express.Router();
+const port = 3000;
+
+app.use(express.json());
+
+app.post('/',(req,res)=>{
+  console.log(req.body.name);
+  res.end();
+});
+
+app.listen(port, (err) => {
+  if(err) console.log(err);
 })
