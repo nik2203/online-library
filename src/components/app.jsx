@@ -1,9 +1,9 @@
 import React from "react";
 import NavBar from "./Navbar/navbar";
 import "./app.css"
-import "./home.css"
 import Footer from "./footer/footer"
 import jinchi from "../assets/jinchi.png"
+
 
 
 function App() {
@@ -13,7 +13,10 @@ function App() {
         </div>
         <center>
             <h1> Welcome to Jinchi</h1>
-            <img src={jinchi} alt="BigCo Inc. logo" />
+            <div>
+            <button className="joinus"><a href="/Signup">Join Us</a></button>
+            </div>
+            <img src={jinchi} alt="Jinchi logo" />
         </center>
         <div>
             <Footer />
