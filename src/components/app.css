@@ -1,9 +1,22 @@
-body{
-    background: #3a405a;
-}
-
-
-h1{
-    align-items: center;
-    color: rgb(222, 222, 222);
-}
+body {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    
+    height: 100%;
+  }
+  
+  body::before{
+    opacity: 0.8;
+  }
+  
+  
+  
+  .pages {
+    color: #316685;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 10%;
+  }
+  
