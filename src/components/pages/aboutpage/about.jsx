@@ -5,9 +5,6 @@ import NavBar from '../../Navbar/navbar';
 function About() {
     return (
         <div>
-            <div className='navbar'>
-                <NavBar />
-            </div>
             <div className='about'>
                 Jinchi is a non-profit library of millions of free books available for readers worldwide.
 
