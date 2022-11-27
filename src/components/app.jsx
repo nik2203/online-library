@@ -5,6 +5,7 @@ import { Home } from "./pages/home/home.jsx";
 import  Login  from "./pages/loginpage/login";
 import  Register  from "./pages/signuppage/signup";
 import About from "./pages/aboutpage/about"
+import Dash from "./pages/home/home2";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <div className="pages">
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/dash" component={Dash}/>
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/about" component={About} />

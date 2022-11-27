@@ -4,7 +4,7 @@ import "./app.css"
 
 
 
-function Home2() {
+function Dash() {
     return <div>
         <NavBar />
         <div>
@@ -37,4 +37,4 @@ function Home2() {
 
 }
 
-export default Home2;
+export default Dash;
