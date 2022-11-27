@@ -7,14 +7,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const db = require('./db')
+const db = require('./db');
+const router = require("./routes");
 const app = express()
 const port = 3000
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/",routes);
+app.use("/",router);
 
 app.get("/",(req,res)=>{
     res.send("node test");
