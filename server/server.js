@@ -17,10 +17,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/",router);
 
-app.get("/",(req,res)=>{
-    res.send("node test");
-});
-
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

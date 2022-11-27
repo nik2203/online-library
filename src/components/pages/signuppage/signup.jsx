@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./signup.css"
 import axios from "axios"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, NavLink } from "react-router-dom"
 
 function Register() {
 
@@ -22,16 +22,8 @@ function Register() {
     function submitHandler(e) {
         e.preventDefault();
         if (checkPassword(password, confirm_password) == 1) {
-            axios.post("http://localhost:4000/register", { username: username, email: email, password: password, confirm_password: confirm_password })
-                .then((res) => {
-                    if (res.data.message == "Existing Account") {
-                        alert("The email entered by you seems to already have an account!\nTry Signing in!")
-                        navigateToLogin()
-                    }
-                    else {
-                        navigateToDash()
-                    }
-                });
+            axios.post("http://localhost:4000/register", { username: username, email: email, password: password, confirm_password: confirm_password });
+            navigateToDash();
         }
         else if (checkPassword(password, confirm_password) == 2)
             alert("Please enter the same password");
@@ -52,8 +44,10 @@ function Register() {
                     <input className="input" type="password" name="password" value={password} placeholder="Your Password" onChange={(event) => setPassword(event.target.value)}></input>
                     <input className="input" type="password" name="confirmpassword" value={confirm_password} placeholder="Re-enter Password" onChange={(event) => setConfirm(event.target.value)}></input>
                     <input type="submit" className="button" value="Register"></input>
+                    <br/>
                     <div>or</div>
-                    <div className="button">Login</div>
+                    <br/>
+                    <NavLink exact to="/login" className="button">Log In</NavLink>
                 </form>
             </div>
         </center>
