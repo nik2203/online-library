@@ -11,21 +11,20 @@ import "./socialfollow.css"
 export default function SocialFollow() {
   return (
     <div className="social-container">
-      <p>Social Follow</p>
-      <a href="https://www.youtube.com/c/jamesqquick"
+      <a href=""
         className="youtube social">
-        <FontAwesomeIcon icon={faYoutube} size="2x" />
+        <FontAwesomeIcon icon={faYoutube} size="0.5x" />
       </a>
-      <a href="https://www.facebook.com/learnbuildteach/"
+      <a href="#"
         className="facebook social">
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
+        <FontAwesomeIcon icon={faFacebook} size="0.5x" />
       </a>
-      <a href="https://www.twitter.com/jamesqquick" className="twitter social">
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
+      <a href="#" className="twitter social">
+        <FontAwesomeIcon icon={faTwitter} size="0.5x" />
       </a>
-      <a href="https://www.instagram.com/learnbuildteach"
+      <a href="https://www.instagram.com/_saicharan19_/"
         className="instagram social">
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
+        <FontAwesomeIcon icon={faInstagram} size="0.5x" />
       </a>
     </div>
   );
