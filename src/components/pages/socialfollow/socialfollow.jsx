@@ -16,18 +16,18 @@ export default function SocialFollow() {
       </div>
       <a href="https://github.com/nik2203/online-library"
         className="youtube social">
-        <FontAwesomeIcon icon={faYoutube} size="2x" />
+        <FontAwesomeIcon icon={faYoutube} size="0.5x" />
       </a>
       <a href="https://github.com/nik2203/online-library"
         className="facebook social">
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
+        <FontAwesomeIcon icon={faFacebook} size="0.5x" />
       </a>
       <a href="https://github.com/nik2203/online-library" className="twitter social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
       <a href="https://github.com/nik2203/online-library"
         className="instagram social">
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
+        <FontAwesomeIcon icon={faInstagram} size="0.5x" />
       </a>
     </div>
   );

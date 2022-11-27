@@ -42,7 +42,6 @@
 .nav-menu {
   display: flex;
   list-style: none;
-  text-align: center;
   margin-right: 2rem;
 }
 
@@ -94,7 +93,7 @@
     border-top: 1pxsolid #fff;
     position: absolute;
     top: 80px;
-    left: -110%;
+    left: -10%;
     opacity: 1;
     transition: all 0.5s ease;
   }
