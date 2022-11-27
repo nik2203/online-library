@@ -13,16 +13,25 @@ html {
   }
 
   .about {
-    display: block;
-    position: absolute;
+    color: aliceblue;
+    font-size: 20px;
     top: 100px;
     margin: 20px;
     padding: 25px;
     width: 600px;
-    background: #8cb812;
+    background: #7c8174;
     box-sizing: border-box;
     border-radius: 10px;
     transform: translate(0px,5px);
+  }
+
+  .team{
+    background-color: #7c8174;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
   }
   
   

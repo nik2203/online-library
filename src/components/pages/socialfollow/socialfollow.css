@@ -1,6 +1,10 @@
 .social-container {
-    background: #3a405a;
     padding: 1px 1px;
+    color:#b6b8bd;
+  }
+  
+  .social{
+    margin: 10px;
   }
 
   a.social {
@@ -22,7 +26,7 @@
   }
   
   a.twitter {
-    color: #49a1eb;
+    color: #000000;
   }
   
   a.instagram {
