@@ -14,7 +14,6 @@ function About() {
                 Like newspapers, the content published on the web in ephemeral - but unlike newspapers, no one is saving it.
                 As our web archive grows, so is our commitment to providing digital versions of other publihshed works. 
                 The goal for our web archive is for it to become a multimedia hub and for it to contain:
-                </p>
                 <ol>
                     <li>625 billion web pages</li>
                     <li>38 million books and texts</li>
@@ -22,7 +21,7 @@ function About() {
                     <li>7 million videos (including 2 million Television News programs)</li>
                     <li>4 million images</li>
                 </ol>
-                <p className='About'>
+
                 Anyone with a free account can get access to all the books available on Jinchi. We  work with thousands of partners globally to save copies of their work into special collections.
                 The main focus of Jinchi is to serve people who have difficulty ___________ physical books, and to save time and make work easy for people.
                 You can find information about our projects on our blog (including important announcements), contact us, buy swag and follow us on Instagram, Twitter and Facebook. Welcome to the library!
