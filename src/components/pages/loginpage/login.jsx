@@ -1,15 +1,11 @@
 import React, { useState } from "react"
 import "./login.css"
 import axios from "axios"
-import { NavLink, useHistory } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 
 const Login = ({ setLoginUser }) => {
 
     const navigate = useNavigate();
-    const navigateToSignUp = () => {
-        navigate("/register");
-    };
-
     const navigateToDash = () => {
         navigate("/dash");
     }
@@ -24,14 +20,16 @@ const Login = ({ setLoginUser }) => {
 
             })
     }
+    const [user, setUser] = useState("");
+    const [password, setPassword] = useState("");
 
     return (
         <center>
             <div className="login">
                 <p>Login</p>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" name="email" value={user.email} onChange={handleChange} placeholder="Enter your Email"></input>
-                    <input type="password" name="password" value={user.password} onChange={handleChange} placeholder="Enter your Password" ></input>
+                    <input type="text" name="username" value={user} onChange={(event)=>setUser(event.target.value)} placeholder="Enter your Username" required></input>
+                    <input type="password" name="password" value={password} onChange={(event)=>setPassword(event.target.value)} placeholder="Enter your Password"  required></input>
                     <input type="submit" className="button">Login</input>
                     <div>or</div>
                     <NavLink exact to="/register" className="button">Register</NavLink>
