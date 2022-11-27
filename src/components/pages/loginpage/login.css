@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.login > input {
+.input {
     border-radius: 8px;
     border: 2px solid #dddfe2;
     outline: none;
@@ -21,7 +21,7 @@
     font-size: 1rem;
 }
 
-.login > .button {
+.button {
     background: #1877f2;
     border: 1px solid #1877f2;
     color: #fff;

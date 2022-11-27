@@ -1,6 +1,6 @@
 import "./app.css";
 import NavBar from "./Navbar/navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home/home.jsx";
 import  Login  from "./pages/loginpage/login";
 import  Register  from "./pages/signuppage/signup";
@@ -15,13 +15,13 @@ function App() {
         <NavBar />
 
         <div className="pages">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/dash" component={Dash}/>
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/about" component={About} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/dash" element={<Dash/>}/>
+            <Route path="/login" element={<Login/>} />
+            <Route path="/register" element={<Register/>} />
+            <Route path="/about" element={<About/>} />
+          </Routes>
 
         </div>
       </Router>

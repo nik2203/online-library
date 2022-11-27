@@ -3,7 +3,7 @@ import "./signup.css"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 
-const Register = () => {
+function Register() {
 
     const navigate = useNavigate();
     const navigateToDash = () => {
@@ -14,22 +14,15 @@ const Register = () => {
     };
 
     const checkPassword = (password, confirm) => {
-        if (password === confirm && password.length > 8) return 1;
-        else if (password === confirm && password.length < 8) return 2;
-        else if (password != confirm) return 3;
+        if (password === confirm) return 1;
+        else if (password != confirm) return 2;
     };
 
 
     function submitHandler(e) {
         e.preventDefault();
-        if (checkPassword(password, confirm) == 1) {
-            const user = {
-                email: email,
-                username: username,
-                password: password,
-                confirm_password: confirm,
-            };
-            axios.post("http://localhost:3000/signup", user)
+        if (checkPassword(password, confirm_password) == 1) {
+            axios.post("http://localhost:4000/register", { username: username, email: email, password: password, confirm_password: confirm_password })
                 .then((res) => {
                     if (res.data.message == "Existing Account") {
                         alert("The email entered by you seems to already have an account!\nTry Signing in!")
@@ -39,32 +32,29 @@ const Register = () => {
                         navigateToDash()
                     }
                 });
-            console.log(user);
-        } else if (checkPassword(password, confirm) == 2)
-            alert("Password should be more than 8 letters");
-        else if (checkPassword(password, confirm) == 3)
+        }
+        else if (checkPassword(password, confirm_password) == 2)
             alert("Please enter the same password");
     }
 
     const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [confirm, setConfirm] = useState("");
+    const [confirm_password, setConfirm] = useState("");
 
     return (
         <center>
             <div className="register">
-                {console.log("User", user)}
                 <h1>Register</h1>
                 <form onSubmit={submitHandler}>
-                <input type="text" name="name" value={username} placeholder="Your Name" onChange={(event)=>setUsername(event.target.value)}></input>
-                <input type="text" name="email" value={email} placeholder="Your Email" onChange={(event)=>setEmail(event.target.value)}></input>
-                <input type="password" name="password" value={password} placeholder="Your Password" onChange={(event)=>setPassword(event.target.value)}></input>
-                <input type="password" name="confirmpassword" value={confirm} placeholder="Re-enter Password" onChange={(event)=>setConfirm(event.target.value)}></input>
-                <input type="submit" className="button">Register</input>
+                    <input className="input" type="text" name="name" value={username} placeholder="Your Name" onChange={(event) => setUsername(event.target.value)}></input>
+                    <input className="input" type="text" name="email" value={email} placeholder="Your Email" onChange={(event) => setEmail(event.target.value)}></input>
+                    <input className="input" type="password" name="password" value={password} placeholder="Your Password" onChange={(event) => setPassword(event.target.value)}></input>
+                    <input className="input" type="password" name="confirmpassword" value={confirm_password} placeholder="Re-enter Password" onChange={(event) => setConfirm(event.target.value)}></input>
+                    <input type="submit" className="button" value="Register"></input>
+                    <div>or</div>
+                    <div className="button">Login</div>
                 </form>
-                <div>or</div>
-                <div className="button" onClick={() => history.push("/login")}>Login</div>
             </div>
         </center>
     )
