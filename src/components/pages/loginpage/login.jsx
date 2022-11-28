@@ -24,6 +24,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
 
     return (
+        <div>
         <center>
             <div className="login">
                 <h1>Login</h1>
@@ -38,6 +39,7 @@ const Login = () => {
                 </form>
             </div>
         </center>
+        </div>
     )
 }
 

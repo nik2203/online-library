@@ -5,7 +5,7 @@ import { Home } from "./pages/home/home.jsx";
 import  Login  from "./pages/loginpage/login";
 import  Register  from "./pages/signuppage/signup";
 import About from "./pages/aboutpage/about"
-import Dash from "./pages/home/home2";
+import Dash from "./pages/dashboard/dash";
 
 
 function App() {

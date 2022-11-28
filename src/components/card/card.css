@@ -1,0 +1,23 @@
+.book{
+    background-color: #2a373a;
+    color: #dbe1e7;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    padding:15px;
+}
+
+.book:hover{
+    background-color: #141c1e;
+    box-shadow: #000000;
+    transform: translate(0,-5px);
+    cursor: pointer;
+}
+
+a:hover{
+    color:#ffffff;
+}
+
+h4{
+    font-weight: 400;
+}

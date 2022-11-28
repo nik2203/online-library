@@ -47,7 +47,7 @@ function NavBar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Sign Up
+                  Register
                 </NavLink>
               </li>
               <li className="nav-item">
