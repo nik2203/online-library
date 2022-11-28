@@ -5,6 +5,7 @@ html {
   body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   .navbar{
@@ -23,25 +24,50 @@ html {
     box-sizing: border-box;
     border-radius: 10px;
     transform: translate(0px,5px);
-    font-size: 30px;
     text-align: center;
-    align-items: center;
-    color: white;
-  
+    align-items: center;  
   }
 
-  .About {
-    font-size: 30px;
-  }
 
   .team{
     background-color: #7c8174;
     color:aliceblue;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     box-sizing: border-box;
     border-radius: 10px;
+    height: 400px;
+    width:900px;
   }
   
+  .row {
+    display: flex;
+  }
   
+  .column {
+    flex: 33.33%;
+    padding: 30px;
+  }
+
+  
+h2{
+  font-weight: bold; 
+  font-style: italic;
+  font-size: 50px;
+}
+
+#nikhil{
+  width: 190px;
+}
+
+#charan{
+  width:190px;
+}
+  
+  .im1 {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    padding-top: 5px;
+  }
   
