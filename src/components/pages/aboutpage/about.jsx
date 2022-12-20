@@ -3,6 +3,7 @@ import "./about.css"
 import nikhilg from "../../../assets/nikhilg.jpeg"
 import charan from "../../../assets/charan.jpeg"
 import nive from "../../../assets/nive.jpeg"
+import Footer from '../../footer/footer'
 
 function About() {
     return (
@@ -27,19 +28,19 @@ function About() {
                     The main focus of Jinchi is to serve people who have difficulty accessing physical books, and to save time and make work easy for people.
                     You can find information about our projects on our social pages (including important announcements), contact us, and follow us on Instagram, Twitter and Facebook. Welcome to the library!
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <div className='team'>
 
 
 
-                    <h2>MEET OUR TEAM</h2>
+                    <h2 className='header'>MEET OUR TEAM</h2>
                     <div class="row">
 
                         <div class="column">
@@ -55,6 +56,9 @@ function About() {
                             <p><a href="https://github.com/nive404">P NIVEDITHA</a></p>
                         </div>
                     </div>
+                </div>
+                <div className="foot">
+                    <Footer />
                 </div>
             </center>
         </div>)

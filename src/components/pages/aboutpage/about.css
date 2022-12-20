@@ -50,7 +50,7 @@ html {
   }
 
   
-h2{
+.header{
   font-weight: bold; 
   font-style: italic;
   font-size: 50px;
@@ -69,5 +69,13 @@ h2{
     height: 250px;
     border-radius: 50%;
     padding-top: 5px;
+  }
+
+  a{
+    color:bisque;
+  }
+
+  a:hover{
+    color: white;
   }
   

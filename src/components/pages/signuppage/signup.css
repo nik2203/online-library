@@ -1,8 +1,8 @@
 
 .register {
     width: 400px;
-    background: #fff;
-    border: 1px solid #dddfe2;
+    background: #7c8174;
+    color:aliceblue;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
     padding: 1rem;
@@ -10,9 +10,8 @@
     text-align: center;
 }
 
-.register > input {
+.input {
     border-radius: 8px;
-    border: 2px solid #dddfe2;
     outline: none;
     color: #1d2129;
     margin: 0.5rem 0;
@@ -21,10 +20,10 @@
     font-size: 1rem;
 }
 
-.register > .button {
-    background: #1877f2;
-    border: 1px solid #1877f2;
-    color: #fff;
+.button {
+    background: aliceblue;
+    border:none;
+    color: #7c8174;
     font-size: 1.25rem;
     padding: 0.5rem;
     margin: 0.5rem 0;

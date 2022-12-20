@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./signup.css"
 import axios from "axios"
 import { useNavigate, NavLink } from "react-router-dom"
+import Footer from "../../footer/footer"
 
 function Register() {
 
@@ -44,11 +45,14 @@ function Register() {
                     <input className="input" type="password" name="password" value={password} placeholder="Your Password" onChange={(event) => setPassword(event.target.value)}></input>
                     <input className="input" type="password" name="confirmpassword" value={confirm_password} placeholder="Re-enter Password" onChange={(event) => setConfirm(event.target.value)}></input>
                     <input type="submit" className="button" value="Register"></input>
-                    <br/>
+                    <br />
                     <div>or</div>
-                    <br/>
+                    <br />
                     <NavLink exact to="/login" className="button">Log In</NavLink>
                 </form>
+            </div>
+            <div className="foot">
+                <Footer />
             </div>
         </center>
     )

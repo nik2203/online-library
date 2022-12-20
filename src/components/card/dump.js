@@ -218,7 +218,7 @@ const books = [
     },
     {
         id:37,
-        title:"The natural and civil history of the French dominions...",
+        title:"The Natural and Civil History of the French Dominions...",
         author:"Thomas Jefferys",
         link:"https://archive.org/details/ldpd_6447806_000"
     },

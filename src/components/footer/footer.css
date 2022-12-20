@@ -1,7 +1,5 @@
-footer {
-    position: absolute;
+.footer {
     text-align: center;
-    bottom: 0;
     width: 100%;
     height: 2.5rem;
     color: #c6c6c6;
