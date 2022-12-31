@@ -11,3 +11,7 @@ Developed with MERN stack.
 ### Known issues:
 - Login not working properly on hosted site (Fix to be implemented: switch from local DB to cloud).
 - Site is not responsive (Fix to be implemented: adding media queries to make website more responsive).
+
+### Contributors:
+- [P Sai Charan](https://github.com/saicharan1901)
+- [P Niveditha](https://github.com/nive404)
